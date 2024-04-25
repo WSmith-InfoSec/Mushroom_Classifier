@@ -12,6 +12,11 @@
 	  #boxes1{
 	  text-align: left;
 	  padding-left: 4em;
+	  font-size: 20px;
+	  font-weight: bold;
+	  background: #e6eef5;
+	  border-radius: 25px;
+	  padding: 20px;
 	  }
 	  
 	  #box1 {
@@ -66,43 +71,153 @@
                 height:300px;
         }
         h1{
-                color:blue;
+                color:white;
+				background: #0f1b38;
+				padding: 15px;
                 text-align:center;
 				font-size: 42px;
+				background-image: url('h1bg.png');
         }
+		
+		.predictions{
+			background: white;
+		}
 		body{
 			text-align: center;
-			background-image: url('water.jpg');
+			background-image: url('mushroombackground.png');
 			background-repeat: no-repeat;
 			background-attachment: fixed;
 			background-size: cover;
 		}
-     
+		.button {
+			  display: inline-block;
+			  border-radius: 4px;
+			  background-color: #FAC898;
+			  border: 2px solid black;
+			  color: #FFFFFF;
+			  text-align: center;
+			  font-size: 24px;
+			  padding: 20px;
+			  width: 200px;
+			  transition: all 0.5s;
+			  cursor: pointer;
+			  margin: 5px;
+			  font-weight: bold;
+			}
+
+			.button span {
+			  cursor: pointer;
+			  display: inline-block;
+			  position: relative;
+			  transition: 0.5s;
+			}
+
+			.button span:after {
+			  content: '\00bb';
+			  position: absolute;
+			  opacity: 0;
+			  top: 0;
+			  right: -20px;
+			  transition: 0.5s;
+			}
+
+			.button:hover span {
+			  padding-right: 25px;
+			}
+
+			.button:hover span:after {
+			  opacity: 1;
+			  right: 0;
+			}
+			.populate {
+				margin: auto;
+				width:50%;
+			}
+			.edibleM{
+			
+			  background-color: #04AA6D; /* Green */
+			  border: none;
+			  color: white;
+			  padding: 16px 32px;
+			  text-align: center;
+			  text-decoration: none;
+			  display: inline-block;
+			  font-size: 16px;
+			  margin: 4px 2px;
+			  transition-duration: 0.4s;
+			  cursor: pointer;
+			}
+			
+			.edibleM {
+			  background-color: white; 
+			  color: black; 
+			  border: 2px solid #f44336;
+			}
+
+			.edibleM:hover {
+			  background-color: #f44336;
+			  color: white;
+			}
+
+			.poisonousM{
+			
+			  background-color: #04AA6D; /* Green */
+			  border: none;
+			  color: white;
+			  padding: 16px 32px;
+			  text-align: center;
+			  text-decoration: none;
+			  display: inline-block;
+			  font-size: 16px;
+			  margin: 4px 2px;
+			  transition-duration: 0.4s;
+			  cursor: pointer;
+			}
+			
+			.poisonousM {
+			  background-color: white; 
+			  color: black; 
+			  border: 2px solid #f44336;
+			}
+
+			.poisonousM:hover {
+			  background-color: #f44336;
+			  color: white;
+			}
      
       
   </style>
 </head>
 <body>
   
-  <h1> Mushroom Safety </h1>
+  <h1> Mushroom Safety</h1>
   
  
   
-<div id = "boxes1">
+   <div id = "boxes1">
                      
-  <input type="text" id="box1" value="0">Cap-Diameter<br/>
+  <input type="text" id="box1" value="0">Cap-Diameter (cm)<br/>
   <input type="text" id="box2" value="0">Cap-Shape<br/>
   <input type="text" id="box3" value="0">Gill-Attachment<br/>
   <input type="text" id="box4" value="0">Gill-Color<br/>
-  <input type="text" id="box5" value="0" >Stem-Height<br/>
-  <input type="text" id="box6" value="0">Stem-Width<br/>
+  <input type="text" id="box5" value="0" >Stem-Height (cm)<br/>
+  <input type="text" id="box6" value="0">Stem-Width (mm)<br/>
   <input type="text" id="box7" value="0">Stem-Color<br/>
   <input type="text" id="box8" value="0">Season<br/>
+  
+	<div id = "populate">
+		<button class = "edibleM" onclick="populateEdible()"> Edible Example</button>
+	</div>
+	
+	<div id = "populate">
+		<button class = "poisonousM" onclick="populatePoison()"> Poisonous Example</button>
+	</div>
 
-</div> 
+    </div> 
       
+
   <div>
-      <input style="background-color:gray" type="button" value="Run" onclick="runExample()"/>
+	  <button class="button" onclick="runExample()"><span> See Your Fate</span></button>
    </div>
   
 
