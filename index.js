@@ -1,4 +1,4 @@
-function populateEdible()
+async function populateEdible()
 {
 	let input1 = document.getElementById('box1');
 	let input2 = document.getElementById('box2');
@@ -19,7 +19,7 @@ function populateEdible()
 	input8.value = "0.9431";
 }
 
-function populatePoison()
+async function populatePoison()
 {
 	let input1 = document.getElementById('box1');
 	let input2 = document.getElementById('box2');
@@ -40,7 +40,7 @@ function populatePoison()
 	input8.value = "1.804";
 }
 
-function runExample() {
+async function runExample() {
 
     var x = new Float32Array( 1, 8 )
 
