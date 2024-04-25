@@ -63,9 +63,15 @@ async function runExample() {
     let outputMap = await session.run([tensorX]);
     let outputData = outputMap.get('output1');
 
-   let predictions = document.getElementById('predictions');
-
-   predictions.innerHTML = `<h3> Safety Class: ${outputData.data[0].toFixed(2)} </h3>`;
-
+    let predictions = document.getElementById('predictions');
+    predictions.innerHTML = `
+  <table>
+     <tr>
+        <td> Safety Value </td>
+        <td id="td0">  ${outputData.data[0].toFixed(2)}  </td>
+     </tr>
+  </table>
+  `;
     
+
 }
