@@ -40,7 +40,7 @@ function populatePoison()
 	input8.value = "1.804";
 }
 
-async function runExample() {
+function runExample() {
 
     var x = new Float32Array( 1, 8 )
 
