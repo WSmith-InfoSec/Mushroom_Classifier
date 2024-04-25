@@ -30,14 +30,14 @@ function populatePoison()
 	let input7 = document.getElementById('box7');
 	let input8 = document.getElementById('box8');
 	
-	input1.value = "1372";
-	input2.value = "2";
-	input3.value = "2";
-	input4.value = "10";
-	input5.value = "3.807";
-	input6.value = "1545";
-	input7.value = "11";
-	input8.value = "1.804";
+	input1.value = "73";
+	input2.value = "5";
+	input3.value = "3";
+	input4.value = "2";
+	input5.value = "0.88774";
+	input6.value = "569";
+	input7.value = "12";
+	input8.value = "0.94315";
 }
 
 async function runExample() {
