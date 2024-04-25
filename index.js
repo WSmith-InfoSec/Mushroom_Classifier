@@ -72,6 +72,20 @@ async function runExample() {
      </tr>
   </table>
   `;
+
+let result = document.getElementByID('result');
+
+	if (${outputData.data[0].toFixed(2)} < 0.30) {
+		result.innerHTML = `<h3>Edible</h3>`
+	}
+
+	else if (${outputData.data[0].toFixed(2)} > 0.70) {
+		result.innerHTML = `<h3>Poisonous</h3>`
+	}
+
+	else{
+		result.innerHTML = `<h3>Unsure, Proceed with Caution...</h3>`
+	}
     
 
 }
