@@ -1,4 +1,4 @@
-async function populateEdible()
+function populateEdible()
 {
 	let input1 = document.getElementById('box1');
 	let input2 = document.getElementById('box2');
@@ -19,7 +19,7 @@ async function populateEdible()
 	input8.value = "0.9431";
 }
 
-async function populatePoison()
+function populatePoison()
 {
 	let input1 = document.getElementById('box1');
 	let input2 = document.getElementById('box2');
