@@ -65,7 +65,7 @@ async function runExample() {
 
    let predictions = document.getElementById('predictions');
 
-   predictions.innerHTML = '<h3> Safety Class: '${outputData.data[0].toFixed(2)} '</h3> ';
+   predictions.innerHTML = `<h3> Safety Class: ${outputData.data[0].toFixed(2)} </h3>`;
 
     
 }
