@@ -1,3 +1,45 @@
+function populateEdible()
+{
+	let input1 = document.getElementById('box1');
+	let input2 = document.getElementById('box2');
+	let input3 = document.getElementById('box3');
+	let input4 = document.getElementById('box4');
+	let input5 = document.getElementById('box5');
+	let input6 = document.getElementById('box6');
+	let input7 = document.getElementById('box7');
+	let input8 = document.getElementById('box8');
+	
+	input1.value = "426";
+	input2.value = "6";
+	input3.value = "2";
+	input4.value = "10";
+	input5.value = "0.1715";
+	input6.value = "1097";
+	input7.value = "12";
+	input8.value = "0.9431";
+}
+
+function populatePoison()
+{
+	let input1 = document.getElementById('box1');
+	let input2 = document.getElementById('box2');
+	let input3 = document.getElementById('box3');
+	let input4 = document.getElementById('box4');
+	let input5 = document.getElementById('box5');
+	let input6 = document.getElementById('box6');
+	let input7 = document.getElementById('box7');
+	let input8 = document.getElementById('box8');
+	
+	input1.value = "1372";
+	input2.value = "2";
+	input3.value = "2";
+	input4.value = "10";
+	input5.value = "3.807";
+	input6.value = "1545";
+	input7.value = "11";
+	input8.value = "1.804";
+}
+
 async function runExample() {
 
     var x = new Float32Array( 1, 8 )
@@ -31,6 +73,4 @@ async function runExample() {
      </tr>
   </table>`;
     
-
-
 }
