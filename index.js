@@ -65,12 +65,7 @@ async function runExample() {
 
    let predictions = document.getElementById('predictions');
 
-  predictions.innerHTML = ` <hr> Got an output tensor with values: <br/>
-   <table>
-     <tr>
-       <td> Mushroom Mum </td>
-       <td id="td0">  ${outputData.data[0].toFixed(2)}  </td>
-     </tr>
-  </table>`;
+  predictions.innerHTML = ${outputData.data[0].toFixed(2)};
+
     
 }
