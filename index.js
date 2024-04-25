@@ -74,5 +74,9 @@ async function runExample() {
   `;
 
 let result = document.getElementByID('result');
+let rating = outputData.data[0].toFixed(2);
 
+	if (rating > 0.70){
+		result.innerHTML = `<h3>Poisonous</h3>`
+	}
 }
